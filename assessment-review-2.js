@@ -44,13 +44,15 @@ class GroceryStore {
 	increasePrice(name) {
 		// use the function above to get item
 		const itemToGet = this.getItems(name);
+		console.log(itemToGet);
 		// use that to get the index
 		const index = this.list.indexOf(itemToGet);
+		console.log(itemToGet);
 		// changes the price of that index
 		// it starts as a string, we need to convert to to a number
 		// then we need to convert it back to a string so the data is all the same
 		// add the decimal points to match everything else
-		return (this.list[index].price = String(Number(itemToGet.price) + 1) + '.00');
+		// return (this.list[index].price = String(Number(itemToGet.price) + 1) + '.00');
 	}
 }
 
