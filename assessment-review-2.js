@@ -30,8 +30,9 @@ class GroceryStore {
 
 	// remove items from the list
 	removeItems(name) {
-		//same as aboce look inside the array to find input
+		//same as above look inside the array to find input
 		const getItem = this.list.find(x => x.item === name);
+
 		// use that information to find the index number of the item
 		const index = this.list.indexOf(getItem);
 		// splice starts at the index we just found
@@ -59,9 +60,9 @@ walmart.addItems({ item: 'pop', price: '5.00' });
 walmart.addItems({ item: 'meat', price: '15.00' });
 walmart.addItems({ item: 'ice cream', price: '6.00' });
 walmart.addItems({ item: 'bread', price: '7.00' });
-console.log(walmart.getGroceryList());
+// console.log(walmart.getGroceryList());
 // console.log(walmart.getItems('ice cream'));
-// console.log(walmart.increasePrice('ice cream'));
+console.log(walmart.increasePrice('ice cream'));
 // console.log(walmart.getItems('ice cream'));
 // console.log(walmart.removeItems('meat'));
 // console.log(walmart.getGroceryList());
